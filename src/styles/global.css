@@ -1,0 +1,123 @@
+.jumbotron {
+    background-color: yellow;
+    margin-bottom: 1rem;
+}
+
+.title-left {
+    color: white;
+    font-weight: 600;
+    margin-right: .5em;
+}
+
+.title-right {
+    color: rgb(241, 241, 241);
+    font-weight: 600;
+    margin-left: .5em;
+}
+
+.title-msg {
+    color: black;
+    margin-bottom: 0;
+}
+
+.date {
+    width: 10em;
+    height: 2.5em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.date-text {
+    color: black;
+    padding-top: .4em;
+}
+
+.date-hr {
+    
+    width: 5em;
+    border-style: solid;
+    border-top-width: .1em;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    color: yellow;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.glow {
+    color: white;
+    text-shadow: 0 0 5px black;
+    /* color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate; */
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #32ddda, 0 0 20px #32ddda, 0 0 25px #32ddda;
+    }
+
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #7f8aff, 0 0 15px #7f8aff, 0 0 20px #7f8aff, 0 0 25px #7f8aff;
+    }
+}
+
+.card {
+    background-color: rgba(255,255,0,1);
+    margin-bottom: 1em;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.flag {
+    width: 1.5em;
+    margin-bottom: .2em;
+}
+
+.cardRow {
+    color: white;
+    background-color: black;
+    margin-bottom: .1em;
+    padding-left: .2em;
+    padding-right: .2em;
+}
+
+.cardRowDouble {
+    color: white;
+    background-color: black;
+    margin-bottom: .1em;
+    padding-left: .2em;
+    padding-right: .2em;
+}
+
+.cardBtn {
+    /* border-style: solid;
+    border-color: black;
+    border-width: .1em; */
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+}
+
+.hr {
+    width: 85%;
+    height: .05em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    background-color: black;
+}
