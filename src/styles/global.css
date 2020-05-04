@@ -1,12 +1,12 @@
 .jumbotron {
-    background-color: yellow;
+    background-color: black;
     margin-bottom: 1rem;
 }
 
 .title-left {
     color: white;
     font-weight: 600;
-    margin-right: .5em;
+    /* margin-right: .5em; */
 }
 
 .title-right {
@@ -16,8 +16,13 @@
 }
 
 .title-msg {
-    color: black;
+    color: #8fffe5;
     margin-bottom: 0;
+}
+
+.title-msg-sm {
+    color: #8fffe5;
+    font-size: .9em;
 }
 
 .date {
@@ -33,21 +38,20 @@
 }
 
 .date-hr {
-    
     width: 5em;
     border-style: solid;
     border-top-width: .1em;
     border-bottom-width: 0;
     border-left-width: 0;
     border-right-width: 0;
-    color: yellow;
+    color: #07ffc6;
     margin-left: auto;
     margin-right: auto;
 }
 
 .glow {
     color: white;
-    text-shadow: 0 0 5px black;
+    text-shadow: 0 0 5px #07ffc6;
     /* color: #fff;
     text-align: center;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
@@ -66,13 +70,14 @@
 }
 
 .card {
-    background-color: rgba(255,255,0,1);
+    background-color: black;
     margin-bottom: 1em;
 }
 
 .card-title {
     text-align: center;
     font-size: 1.5em;
+    color: white;
 }
 
 .card-body {
@@ -85,8 +90,8 @@
 }
 
 .cardRow {
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
     margin-bottom: .1em;
     padding-left: .2em;
     padding-right: .2em;
@@ -114,10 +119,10 @@
 
 .hr {
     width: 85%;
-    height: .05em;
+    height: .1em;
     margin-left: auto;
     margin-right: auto;
     margin-top: .5em;
     margin-bottom: .5em;
-    background-color: black;
+    background-color: #07ffc6;
 }
