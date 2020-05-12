@@ -8,6 +8,7 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import C19 from "../components/c19stats"
+import StateStats from "../components/stateStats"
 
 const date = moment().format('MMMM Do YYYY')
 
@@ -78,9 +79,10 @@ const IndexPage = () => (
               <div className="date-hr"></div>
             </div>
         </div>
+        <StateStats></StateStats>
         <C19></C19>
         <div className="row justify-content-center">
-          <button className="btn btn-success" onClick={sendMail}>Email</button>
+          <button className="btn btnColor" onClick={sendMail}>email</button>
         </div>
     </div>
     {/* <Link to="/page-2/">Go to page 2</Link> */}

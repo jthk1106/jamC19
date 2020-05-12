@@ -49,6 +49,11 @@
     margin-right: auto;
 }
 
+.searchbar {
+    margin-bottom: 2em;
+    width: 20em;
+}
+
 .glow {
     color: white;
     text-shadow: 0 0 5px #07ffc6;
@@ -80,8 +85,19 @@
     color: white;
 }
 
+.card-title-State {
+    text-align: center;
+    font-size: 1.5em;
+    color: black;
+}
+
 .card-body {
     text-align: center;
+}
+
+.card-State {
+    background-color: #07ffc6;
+    margin-bottom: 1em;
 }
 
 .flag {
@@ -124,5 +140,19 @@
     margin-right: auto;
     margin-top: .5em;
     margin-bottom: .5em;
+    background-color: #07ffc6;
+}
+
+.hr-State {
+    width: 85%;
+    height: .1em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    background-color: black;
+}
+
+.btnColor {
     background-color: #07ffc6;
 }
