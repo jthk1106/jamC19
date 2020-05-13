@@ -81,9 +81,9 @@ const IndexPage = () => (
         </div>
         <StateStats></StateStats>
         <C19></C19>
-        <div className="row justify-content-center">
+        {/* <div className="row justify-content-center">
           <button className="btn btnColor" onClick={sendMail}>email</button>
-        </div>
+        </div> */}
     </div>
     {/* <Link to="/page-2/">Go to page 2</Link> */}
     {/* </Layout> */}

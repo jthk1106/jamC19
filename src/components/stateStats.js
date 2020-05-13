@@ -7,14 +7,15 @@ class StateStats extends React.Component {
         super(props)
 
         this.state = {
-            state: "",
+            state: "california",
+            stateDisplay: "california",
             data: ""
         }
     }
 
-    search = () => {
+    componentDidMount() {
         axios
-        .get(`https://corona.lmao.ninja/v2/states/${this.state.state}`)
+        .get(`https://corona.lmao.ninja/v2/states/california`)
         .then(res =>
             this.setState({
                 data: {
@@ -31,22 +32,53 @@ class StateStats extends React.Component {
         .catch(err => alert(`Something went wrong...`))
     }
 
+    search = () => {
+        axios
+        .get(`https://corona.lmao.ninja/v2/states/${this.state.state}`)
+        .then(res =>
+            this.setState({
+                data: {
+                    cases: res.data.cases,
+                    todayCases: res.data.todayCases,
+                    deaths: res.data.deaths,
+                    todayDeaths: res.data.todayDeaths,
+                    testsMillion: res.data.testsPerOneMillion,
+                    active: res.data.active,
+                    tests: res.data.tests,
+                },
+                stateDisplay: this.state.state
+            })
+        )
+        .catch(err => alert(`Something went wrong...`))
+    }
+
+    handleEnter = (e) => {
+        if(e.key === 'Enter') {
+            this.search()
+        }
+    }
+
     render() {
         const testsPercent = this.state.data.testsMillion / 1000000
         return (
             <React.Fragment>
                 <div className="row justify-content-center">
                     <div className="input-group searchbar">
-                        <input type="text" className="form-control" placeholder="Search your state" onChange={(e) => this.setState({state: e.target.value})}/>
+                        <input 
+                            type="text"
+                            className="form-control"
+                            placeholder="Search your state"
+                            onChange={(e) => this.setState({state: e.target.value})}
+                            onKeyPress={this.handleEnter}/>
                         <div className="input-group-append">
                         <button className="btn btnColor" type="button" id="button-addon2" onClick={this.search}>submit</button>
                         </div>
                     </div>
                 </div>
                 <div className="row justify-content-around">
-                    <div className="card-State col-10 col-md-11 animated fadeInLeft">
+                    <div className="card-State col-10 col-md-11 animated bounce">
                         <div className="card-body">
-                            <h5 className="card-title-State">{this.state.state}</h5>
+                            <h5 className="card-title-State">{this.state.stateDisplay}</h5>
                             <div className="card-text">
                                 <div className="row justify-content-around">
                                     <div className="col-md-5">
